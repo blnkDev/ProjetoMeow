@@ -914,7 +914,6 @@ GameObject:
   - component: {fileID: 6955052662486041646}
   - component: {fileID: 2814961933200858792}
   - component: {fileID: 4910634011822517345}
-  - component: {fileID: 3624455795545471865}
   - component: {fileID: 3592081043977175571}
   m_Layer: 6
   m_Name: AliveCat
@@ -1313,34 +1312,6 @@ MonoBehaviour:
   MinimumTimeAfterLadderJump: 0.5
   NoInputClimb: 0
   NoInputClimbAirOnly: 0
---- !u!114 &3624455795545471865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8362357751995936984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59e06702d6be45948936bd909420d61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MoreMountains.CorgiEngine::MoreMountains.CorgiEngine.CharacterPause
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BlockingWeaponStates: 
-  MuteSfxTrackSounds: 1
-  MuteUITrackSounds: 0
-  MuteMusicTrackSounds: 0
-  MuteMasterTrackSounds: 0
-  OnPause:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUnpause:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &3592081043977175571
 MonoBehaviour:
   m_ObjectHideFlags: 0
