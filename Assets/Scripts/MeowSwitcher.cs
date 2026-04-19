@@ -19,6 +19,9 @@ public class MeowSwitcher : MonoBehaviour
     [SerializeField] private float deadVolumeTransitionDuration = 0.2f;
     private float _targetDeadVolumeWeight;
 
+    [Header("Feedbacks")]
+    [SerializeField] private MMF_Player feedbackTrocaGato;
+
     [Header("Áudio")]
     [FormerlySerializedAs("SomTransicao")]
     [SerializeField] private AudioClip transicaoDeathParaAlive;
@@ -84,7 +87,7 @@ public class MeowSwitcher : MonoBehaviour
     {
         AtualizarDeadVolumeGradual();
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.P))
         {
             // Curto (0.1s a 0.2s) e intenso
             MMCameraShakeEvent.Trigger(
@@ -118,6 +121,11 @@ public class MeowSwitcher : MonoBehaviour
         _focadoNoAzul = !_focadoNoAzul;
 
         _targetDeadVolumeWeight = _focadoNoAzul ? 0f : 1f;
+
+        if (feedbackTrocaGato != null)
+        {
+            feedbackTrocaGato.PlayFeedbacks();
+        }
 
         if (gatoAzul?.ConditionState != null)
         {

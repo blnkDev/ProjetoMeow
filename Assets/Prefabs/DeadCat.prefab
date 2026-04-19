@@ -149,7 +149,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &749264930242997488
 MonoBehaviour:
@@ -215,7 +215,7 @@ MonoBehaviour:
     DisplayWarnings: 1
   PlatformMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 536871168
   MovingPlatformMask:
     serializedVersion: 2
     m_Bits: 262144
@@ -376,7 +376,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   NumberOfJumps: 1
-  JumpHeight: 3.025
+  JumpHeight: 3.3
   JumpRestrictions: 2
   ResetCameraOffsetOnJump: 0
   CanJumpDownOneWayPlatforms: 1
